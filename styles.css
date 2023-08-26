@@ -52,3 +52,18 @@ video {
     padding: 20px;
     align-items: center;
 }
+
+#footer {
+    background-color: black;
+    background-image: url(./imgs/people.png);
+    background-size: 500px;
+    background-repeat: repeat-x;
+    background-position-y: 140px;
+}
+
+#section-3 {
+    background-image: url(./imgs/video2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
