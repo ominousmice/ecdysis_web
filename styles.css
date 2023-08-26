@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    display: flex;
+    scroll-snap-align: start;
+
+    background-image: url(./imgs/grunge-wall-texture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.scroll-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.section-content {
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.col {
+    padding: 20px;
+    align-items: center;
+}
