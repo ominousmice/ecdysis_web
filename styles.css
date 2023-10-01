@@ -5,28 +5,16 @@
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: large;
-    color: white;
-
-    background-color: black;
 }
 
 body {
+    background-color: black;
     overflow-x: hidden;
-    overflow: hidden;
-    scroll-snap-type: y mandatory;
 }
 
 section {
     display: flex;
-    scroll-snap-align: start;
-
     background-color: black;
-}
-
-.scroll-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
 }
 
 video {
@@ -36,37 +24,60 @@ video {
     display: block;
 }
 
-#section-2 {
-    height: 100vh;
-}
 
-/*
 .section-content {
     margin-top: 15vh;
     margin-bottom: 20vh;
-} */
+}
 
 .col-sm-6 {
     padding: 20px;
     align-items: center;
 }
 
-/*
-#fixed-title {
-    position: fixed;
-    width: 100%;
-    padding: .5vw;
-
-    color: red;
-
-    font-size: 40px;
-}
-*/
-
 .footer {
     color: rgb(50, 50, 50);
 }
 
+
 .link-social{
-    color: red;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+.link-social-text{
+    padding: 10px;
+    margin: auto;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    width: 70%;
+
+    text-align: center;
+}
+
+.link-social a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.link-social a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.link-social a:hover > p {
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+}
+
+.link-social a:active > p{
+    text-decoration: none;
+    color: black;
+    background-color: black;
+    border: 1px solid black;
 }
