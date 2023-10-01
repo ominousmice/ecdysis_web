@@ -6,6 +6,8 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: large;
     color: white;
+
+    background-color: black;
 }
 
 body {
@@ -18,10 +20,7 @@ section {
     display: flex;
     scroll-snap-align: start;
 
-    background-image: url(./imgs/grunge-wall-texture.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: black;
 }
 
 .scroll-container{
@@ -37,33 +36,37 @@ video {
     display: block;
 }
 
+#section-2 {
+    height: 100vh;
+}
+
+/*
 .section-content {
     margin-top: 15vh;
     margin-bottom: 20vh;
-}
+} */
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-.col {
+.col-sm-6 {
     padding: 20px;
     align-items: center;
 }
 
-#footer {
-    background-color: black;
-    background-image: url(./imgs/people.png);
-    background-size: 500px;
-    background-repeat: repeat-x;
-    background-position-y: 140px;
+/*
+#fixed-title {
+    position: fixed;
+    width: 100%;
+    padding: .5vw;
+
+    color: red;
+
+    font-size: 40px;
+}
+*/
+
+.footer {
+    color: rgb(50, 50, 50);
 }
 
-#section-3 {
-    background-image: url(./imgs/video2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.link-social{
+    color: red;
 }
