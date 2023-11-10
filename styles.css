@@ -24,38 +24,41 @@ video {
     display: block;
 }
 
-
-.section-content {
-    margin-top: 15vh;
-    margin-bottom: 20vh;
+.line {
+    height: 1px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.col-sm-6 {
-    padding: 20px;
+
+#footer-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#link-social-ig {
+    display: inline-block;
+    width: 50%; /* Para ocupar el 50% del contenedor */
+    box-sizing: border-box;
+}
+
+#link-social-yt {
+    display: inline-block;
+    width: 50%; /* Para ocupar el 50% del contenedor */
+    box-sizing: border-box;
+}
+
 .footer {
-    color: rgb(60, 60, 60);
-}
-
-
-.link-social{
-    margin: 15px auto;
     text-align: center;
-}
-
-
-.link-social-text{
-    padding: 10px;
-    margin: auto;
-
-    border: 1px solid white;
-    border-radius: 5px;
-
-    width: 70%;
-
-    text-align: center;
+    margin-top: 20px; /* Espacio entre los botones y el pie de página */
 }
 
 .link-social a:link {
@@ -125,4 +128,23 @@ video {
 #scenesCarousel {
     margin-top: 20vh;
     margin-bottom: 20vh;
+}
+
+
+/* Estilo para hacer los iframes responsivos */
+iframe {
+    max-width: 100%; /* Evita que los iframes se desborden en pantallas pequeñas */
+    
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    #scenesCarousel {
+        margin-top: 10vh; /* Reducir el margen superior en dispositivos móviles */
+        margin-bottom: 10vh; /* Reducir el margen inferior en dispositivos móviles */
+    }
+
+    .carousel-item iframe {
+        height: 300px; /* Establecer una altura específica para los iframes en dispositivos pequeños */
+    }
 }
