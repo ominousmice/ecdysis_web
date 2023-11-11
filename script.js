@@ -2,14 +2,36 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // Your animation code
-gsap.to("#animateMe", {
-  opacity: 0,
-  y: 100,
+gsap.to("#concepto", {
+  opacity: 1,
+  x: 0,
   scrollTrigger: {
-    trigger: "#animateMe",  // The element that triggers the animation
+    trigger: "#concepto",  // The element that triggers the animation
     start: "top center",    // When to start the animation
-    end: "bottom center",   // When to end the animation
+    end: "bottom 50%",   // When to end the animation
     scrub: true,            // Smoothly animate the property as you scroll
-    markers: true
+  }
+});
+
+gsap.to("#etapas", {
+  opacity: 1,
+  x: 0,
+  scrollTrigger: {
+    trigger: "#etapas",  // The element that triggers the animation
+    start: "top center",    // When to start the animation
+    end: "bottom 50%",   // When to end the animation
+    scrub: true,            // Smoothly animate the property as you scroll
+  }
+});
+
+
+gsap.to("#instalacion", {
+  opacity: 1,
+  x: 0,
+  scrollTrigger: {
+    trigger: "#instalacion",  // The element that triggers the animation
+    start: "top center",    // When to start the animation
+    end: "bottom 50%",   // When to end the animation
+    scrub: true,            // Smoothly animate the property as you scroll
   }
 });
