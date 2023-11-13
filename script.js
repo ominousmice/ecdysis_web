@@ -35,3 +35,9 @@ gsap.to("#instalacion", {
     scrub: true,            // Smoothly animate the property as you scroll
   }
 });
+
+
+function scrollToElement(elementId) {
+  var targetElement = document.getElementById(elementId);
+  targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
