@@ -12,17 +12,22 @@
 }
 
 body {
-    background-color: black;
+    background-color: #f1f1f1;
     overflow-x: hidden;
 }
 
 section {
-    background-color: black;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 }
 
 #section-1{
     height: 100vh;
+    background-color: black;
+}
+
+
+#section-3{
+    padding: 1%;
 }
 
 .line {
@@ -100,22 +105,6 @@ iframe {
     
 }
 
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 767px) {
-    #scenesCarousel {
-        margin-top: 10vh; /* Reducir el margen superior en dispositivos móviles */
-        margin-bottom: 10vh; /* Reducir el margen inferior en dispositivos móviles */
-    }
-
-    .carousel-item iframe {
-        height: 300px; /* Establecer una altura específica para los iframes en dispositivos pequeños */
-    }
-}
-
-p {
-    color: white;
-    font-size: medium;
-}
 
 h1 {
     color: white;
@@ -125,13 +114,10 @@ h1 {
 }
 
 h2 {
-    color: red;
+    color: #B40202;
     font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
-    font-size: 200%;
-}
-
-#section-2{
-    padding: 1%;
+    font-size: 300%;
+    text-align: center;
 }
 
 .info-content {
@@ -165,7 +151,7 @@ h2 {
 }
 
 .scrollButton:hover {
-    color: red;
+    color: #B40202;
     cursor: pointer;
 }
 
@@ -175,11 +161,20 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f100;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #f0f0f0;
+    background-color: #B40202;
     border-radius: 10px;
-    border: 4px solid #000000;
+    border: 4px solid #f1f1f1;
+}
+
+#intro {
+    padding-top: 2%;
+}
+
+#invitacion {
+    margin-top: 10%;
+    padding: 5% 0;
 }
