@@ -9,6 +9,7 @@
     box-sizing: border-box;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 body {
@@ -186,4 +187,8 @@ h2 {
 
 .hero-text {
     position: absolute;
+}
+
+.accordion p {
+    color: black;
 }
