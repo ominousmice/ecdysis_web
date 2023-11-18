@@ -1,10 +1,14 @@
+@font-face {
+    font-family: 'Aesthetic';
+    src: url('fonts/Aesthetic-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: large;
 }
 
 body {
@@ -113,8 +117,17 @@ p {
     font-size: medium;
 }
 
+h1 {
+    color: white;
+    font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
+    font-size: 400%;
+    letter-spacing: 5px;
+}
+
 h2 {
     color: red;
+    font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
+    font-size: 200%;
 }
 
 #section-2{
@@ -154,4 +167,19 @@ h2 {
 .scrollButton:hover {
     color: red;
     cursor: pointer;
+}
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 4px solid #000000;
 }
