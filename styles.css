@@ -1,69 +1,180 @@
+@font-face {
+    font-family: 'Aesthetic';
+    src: url('fonts/Aesthetic-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: large;
-    color: white;
 }
 
 body {
+    background-color: #f1f1f1;
     overflow-x: hidden;
-    overflow: hidden;
-    scroll-snap-type: y mandatory;
 }
 
 section {
-    display: flex;
-    scroll-snap-align: start;
-
-    background-image: url(./imgs/grunge-wall-texture.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    margin-bottom: 1%;
 }
 
-.scroll-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+#section-1{
     height: 100vh;
+    background-color: black;
 }
 
-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    display: block;
+
+#section-3{
+    padding: 1%;
 }
 
-.section-content {
-    margin-top: 15vh;
-    margin-bottom: 20vh;
-}
-
-.navbar {
-    position: fixed;
+.line {
+    height: 1px;
+    background-color: white;
     width: 100%;
-    z-index: 1000;
+    margin-bottom: 40px;
 }
 
-.col {
-    padding: 20px;
+
+#footer-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#footer {
-    background-color: black;
-    background-image: url(./imgs/people.png);
-    background-size: 500px;
-    background-repeat: repeat-x;
-    background-position-y: 140px;
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#section-3 {
-    background-image: url(./imgs/video2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+#link-social-ig {
+    display: inline-block;
+    width: 50%; /* Para ocupar el 50% del contenedor */
+    box-sizing: border-box;
+}
+
+#link-social-yt {
+    display: inline-block;
+    width: 50%; /* Para ocupar el 50% del contenedor */
+    box-sizing: border-box;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre los botones y el pie de página */
+}
+
+.link-social a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.link-social a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.link-social a:hover > p {
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+}
+
+.link-social a:active > p{
+    text-decoration: none;
+    color: black;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+/* Estilo para hacer los iframes responsivos */
+iframe {
+    max-width: 100%; /* Evita que los iframes se desborden en pantallas pequeñas */
+    
+}
+
+
+h1 {
+    color: white;
+    font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
+    font-size: 400%;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: #B40202;
+    font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+.info-content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    opacity: 0;
+    margin-bottom: 20px;
+}
+
+#concepto {
+    transform: translateX(-50px);
+}
+
+#etapas {
+    transform: translateX(50px);
+}
+
+#instalacion {
+    transform: translateX(-50px);
+}
+
+.escena {
+    margin-bottom: 5%;
+}
+
+.scrollButton {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollButton:hover {
+    color: #B40202;
+    cursor: pointer;
+}
+
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #B40202;
+    border-radius: 10px;
+    border: 4px solid #f1f1f1;
+}
+
+#intro {
+    padding-top: 2%;
+}
+
+#invitacion {
+    margin-top: 10%;
+    padding: 5% 0;
 }
