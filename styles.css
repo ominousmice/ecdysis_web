@@ -192,3 +192,7 @@ h2 {
 .accordion p {
     color: black;
 }
+
+.accordion p strong {
+    color: black;
+}
