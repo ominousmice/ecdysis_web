@@ -27,78 +27,28 @@
 
 </head>
 <body>
-
 <!-- Content -->
+<!-- Hero -->
 <section id="section-1">
     <div class="container" >
         <div class="row">
           <div class="col-md-8 text-overlay">
-            <!-- Content for the second column -->
             <div class="row d-flex align-items-center">
                 <h1 class="hero-text text-center">Ecdysis</h1>
                 <img src="./imgs/cubo_colibri.jpeg">
-                <a class="scrollButton" onclick="scrollToElement('intro')" class="text-center"><i class="bi bi-arrow-down-circle-fill" style="font-size: 2em;"></i></a>
+                <a class="scrollButton" onclick="scrollToElement('escenas')" class="text-center"><i class="bi bi-arrow-down-circle-fill" style="font-size: 2em;"></i></a>
             </div>
           </div>
         </div>
       </div>
 </section>
 
-<section id="section-2">
-    <div class="container">
-        <div class="row" id="intro">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 text-center">
-                <p>Ecdysis es un proyecto transmedial que fusiona el arte y la tecnología en una experiencia audiovisual que propone explorar la metamorfosis como entidad del absurdo del humano.</p>
-                <div id="invitacion">
-                    <p class="invitacion-text">Jueves 30/11 y viernes 1/12 </p>
-                    <p class="invitacion-text">A partir de las 20:00</p>
-                    <p class="invitacion-text">Aula Magna de la Universidad Católica del Uruguay (Av. 8 de Octubre 2738)</p>
-                    <a class="scrollButton" onclick="scrollToElement('concepto')" class="text-center"><i class="bi bi-arrow-down-circle-fill" style="font-size: 2em;"></i></a>
-                </div>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section id="section-3">
-    <div class="container">
-        <div class="row info-content" id="concepto">
-            <div class="col-md-8">
-                <h2>Concepto</h2>
-                <p>Inspirado en las ideas de Albert Camus, el concepto del absurdo se define como la distancia entre la búsqueda de sentido por parte de los seres humanos y la indiferencia absoluta del universo ante esta búsqueda.</p>
-            </div>
-        </div>
-
-        <div class="row info-content" id="etapas">
-            <div class="col-md-4 text-right"></div>
-            <div class="col-md-8 text-right">
-                <h2>Etapas</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue fermentum risus eget pharetra. Praesent ut ante malesuada, pharetra metus sit amet, tristique felis. Morbi ex tortor, bibendum non vulputate eget, finibus eget augue. Duis sed justo id risus vulputate pulvinar nec at est. </p>
-            </div>
-        </div>
-
-        <div class="row info-content" id="instalacion">
-            <div class="col-md-8">
-                <h2>Instalación</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue fermentum risus eget pharetra. Praesent ut ante malesuada, pharetra metus sit amet, tristique felis. Morbi ex tortor, bibendum non vulputate eget, finibus eget augue. Duis sed justo id risus vulputate pulvinar nec at est. </p>
-            </div>
-        </div>
-        <a class="scrollButton" onclick="scrollToElement('escenas')"><i class="bi bi-arrow-down-circle-fill" style="font-size: 2em;"></i></a>
-    </div>
-</section>
-
+<!-- Escenas -->
 <section id="section-4">
     <div class="container">
         <div class="row">
             <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <h2 id="escenas">Escenas</h2>
+            <div class="col-sm-10 scroll-container" id="escenas">
                 <div class="embed-responsive embed-responsive-16by9 escena">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ULWTuWay6xg?si=ODphU-M6fuoytgzk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>        
                 </div>
@@ -120,12 +70,19 @@
     </div>
 </section>
 
+<!-- Texto -->
 <section id="section-5">
     <div class="container">
         <div class="row">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 text-center">
+                    <p>Ecdysis es un proyecto transmedial que fusiona el arte y la tecnología en una experiencia audiovisual que propone explorar la metamorfosis como entidad del absurdo del humano.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <h2>Más información</h2>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h3 class="accordion-header">
@@ -184,7 +141,25 @@
     </div>
 </section>
 
-<!-- Link to socials -->
+<!-- Instalación -->
+<section id="section-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 text-center">
+                <div id="invitacion">
+                    <p class="invitacion-text">Jueves 30/11 y viernes 1/12 </p>
+                    <p class="invitacion-text">A partir de las 20:00</p>
+                    <p class="invitacion-text">Aula Magna de la Universidad Católica del Uruguay (Av. 8 de Octubre 2738)</p>
+                </div>
+                <p>!!!!!! GOOGLE FORM !!!!!!!!</p> <button class="button btn-dark">Reservá tu turno</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
 <div class="line"></div>
 <footer id="footer-section">
     <div class="col-sm-6" id="wrapper">

@@ -110,17 +110,14 @@ iframe {
 h1 {
     color: white;
     font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
-    font-size: 400%;
-    letter-spacing: 20px;
-    
-    background-color: rgba(0,0,0,.5);
+    font-size: 1200%;
+    letter-spacing: 2vw;
+
     padding-top: 1.5%;
-    border-radius: 20px;
 
 }
 
 h2 {
-    color: #B40202;
     font-family: 'Aesthetic', Helvetica, Arial, sans-serif;
     font-size: 300%;
     text-align: center;
@@ -189,10 +186,25 @@ h2 {
     position: absolute;
 }
 
-.accordion p {
-    color: black;
+.accordion-body {
+    background-color: black;
 }
 
-.accordion p strong {
-    color: black;
+.accordion-button {
+    background-color: black;
+}
+
+.accordion-button:hover {
+    background-color: #B40202;
+}
+
+/* Container for the horizontal-scrolling section */
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+.escena {
+    display: inline-block;
 }
