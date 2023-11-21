@@ -19,3 +19,13 @@ function scrollToElement(elementId) {
   var targetElement = document.getElementById(elementId);
   targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.getElementById('escenas').scrollLeft += document.getElementById('escena1').offsetWidth + 10;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('escenas').scrollLeft -= document.getElementById('escena1').offsetWidth + 10;
+};

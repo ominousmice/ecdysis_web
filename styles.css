@@ -154,7 +154,6 @@ h2 {
 }
 
 .scrollButton:hover {
-    color: #B40202;
     cursor: pointer;
 }
 
@@ -168,7 +167,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #B40202;
+    background-color: white;
     border-radius: 10px;
     border: 4px solid black;
 }
@@ -195,16 +194,33 @@ h2 {
 }
 
 .accordion-button:hover {
-    background-color: #B40202;
+    background-color: white;
+    color: black;
 }
 
 /* Container for the horizontal-scrolling section */
 .scroll-container {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap; /* Prevents line breaks */
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .escena {
-    display: inline-block;
+    flex: 0 0 auto;
+    margin-right: 16px; /* Adjust as needed */
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 400%;
+    }
+}
+
+button {
+    color: black;
+}
+
+#slideLeft:hover, #slideRight:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
