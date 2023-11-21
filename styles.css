@@ -21,14 +21,13 @@ section {
     margin-bottom: 1%;
 }
 
-#section-1{
+#section-1 {
     height: 100vh;
     background-color: black;
 }
 
-
-#section-3{
-    padding: 1%;
+#section-3 {
+    margin-top: 5%;
 }
 
 .line {
@@ -37,7 +36,6 @@ section {
     width: 100%;
     margin-bottom: 40px;
 }
-
 
 #footer-section {
     display: flex;
@@ -177,7 +175,7 @@ h2 {
 }
 
 #invitacion {
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 5% 0;
 }
 
@@ -196,6 +194,10 @@ h2 {
 .accordion-button:hover {
     background-color: white;
     color: black;
+}
+
+#accordionInfo {
+    margin-top: 5%;
 }
 
 /* Container for the horizontal-scrolling section */
