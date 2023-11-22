@@ -15,7 +15,69 @@
 body {
     background-color: black;
     overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    margin-top: 35px;
+    padding: 0;
 }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 30px;
+    z-index: 2;
+  }
+  
+  nav {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 0; /* Cambia la posición superior a 0 para que el menú esté en la parte superior */
+    left: 0;
+    width: 100%; /* Cambia el ancho al 100% para ocupar toda la pantalla */
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box; /* Añade esto para incluir el padding en el ancho total */
+  }
+  
+  nav a {
+    display: inline-block;
+    width: 20%; 
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; 
+    box-sizing: border-box;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  nav a:hover {
+    color: red; 
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    border-radius: 15px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked + .menu-btn + nav {
+    display: block;
+  }
+  
+  
+
+  
 
 section {
     margin-bottom: 1%;
