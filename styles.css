@@ -31,6 +31,7 @@ section {
 }
 
 .line {
+    margin-top: 4%;
     height: 1px;
     background-color: white;
     width: 100%;
@@ -252,10 +253,7 @@ h2 {
     }
 
 #form-button {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 2% 5%;
     border-radius: 10px;
     border: 2px solid black;
     font-size: 20px;
