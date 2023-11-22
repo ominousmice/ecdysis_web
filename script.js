@@ -1,3 +1,4 @@
+/*
 // Register ScrollTrigger with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,32 +13,19 @@ gsap.to("#concepto", {
     scrub: true,            // Smoothly animate the property as you scroll
   }
 });
-
-gsap.to("#etapas", {
-  opacity: 1,
-  x: 0,
-  scrollTrigger: {
-    trigger: "#etapas",  // The element that triggers the animation
-    start: "top center",    // When to start the animation
-    end: "bottom 50%",   // When to end the animation
-    scrub: true,            // Smoothly animate the property as you scroll
-  }
-});
-
-
-gsap.to("#instalacion", {
-  opacity: 1,
-  x: 0,
-  scrollTrigger: {
-    trigger: "#instalacion",  // The element that triggers the animation
-    start: "top center",    // When to start the animation
-    end: "bottom 50%",   // When to end the animation
-    scrub: true,            // Smoothly animate the property as you scroll
-  }
-});
-
+*/
 
 function scrollToElement(elementId) {
   var targetElement = document.getElementById(elementId);
   targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.getElementById('escenas').scrollLeft += document.getElementById('escena1').offsetWidth + 10;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('escenas').scrollLeft -= document.getElementById('escena1').offsetWidth + 10;
+};
