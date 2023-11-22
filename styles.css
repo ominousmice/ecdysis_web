@@ -218,10 +218,6 @@ h2 {
     }
 }
 
-button {
-    color: black;
-}
-
 #slideLeft:hover, #slideRight:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -241,4 +237,36 @@ button {
 
 #title {
     animation: fadeInOut 2s infinite;
+}
+
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.03);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+#form-button {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    background-color: red;
+
+    animation: growShrink 3s infinite;
+}
+
+#form-button:hover {
+    background-color: black;
+    border: 2px solid red;
 }
