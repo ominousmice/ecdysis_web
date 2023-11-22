@@ -219,6 +219,10 @@ h2 {
     h1 {
         font-size: 400%;
     }
+
+    #pingau {
+        margin-bottom: 30%;
+    }
 }
 
 #slideLeft:hover, #slideRight:hover {
