@@ -226,3 +226,19 @@ button {
     cursor: pointer;
     text-decoration: underline;
 }
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+#title {
+    animation: fadeInOut 2s infinite;
+}
