@@ -147,11 +147,22 @@ h2 {
     margin-bottom: 5%;
 }
 
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
 .scrollButton {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: moveUpDown 2s infinite;
 }
 
 .scrollButton:hover {
