@@ -93,6 +93,7 @@ section {
 }
 
 .line {
+    margin-top: 4%;
     height: 1px;
     background-color: white;
     width: 100%;
@@ -128,28 +129,30 @@ section {
     margin-top: 20px; /* Espacio entre los botones y el pie de página */
 }
 
-.link-social a:link {
-    text-decoration: none;
-    color: white;
+.link-social{
+    margin: 15px auto;
+    text-align: center;
 }
 
-.link-social a:visited{
+.link-social-text{
+    padding: 10px;
+    margin: auto;
+
+    width: 70%;
+
+    text-align: center;
+
+    text-decoration: underline;
+}
+
+.link-social a:link {
     text-decoration: none;
-    color: white;
 }
 
 .link-social a:hover > p {
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, .1);
 
     text-decoration: none;
-}
-
-.link-social a:active > p{
-    text-decoration: none;
-    color: black;
-    background-color: black;
-    border: 1px solid black;
 }
 
 .text-overlay {
@@ -206,11 +209,22 @@ h2 {
     margin-bottom: 5%;
 }
 
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
 .scrollButton {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: moveUpDown 2s infinite;
 }
 
 .scrollButton:hover {
@@ -278,10 +292,10 @@ h2 {
     h1 {
         font-size: 400%;
     }
-}
 
-button {
-    color: black;
+    #pingau {
+        margin-bottom: 30%;
+    }
 }
 
 #slideLeft:hover, #slideRight:hover {
@@ -304,3 +318,52 @@ button {
 #title {
     animation: fadeInOut 2s infinite;
 }
+
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.03);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+#form-button {
+    padding: 2% 5%;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    background-color: red;
+
+    animation: growShrink 3s infinite;
+}
+
+#form-button:hover {
+    background-color: black;
+    border: 2px solid red;
+}
+
+#invitacion {
+    text-align: center;
+    background-color: #222;
+    padding: 5%;
+    border-radius: 10px;
+    width: 85%;
+
+    border: 1px solid white;
+
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  
+  .invitacion-text {
+    font-size: 130%;
+    color: white;
+    margin: 10px 0;
+  }
