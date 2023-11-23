@@ -211,10 +211,10 @@ h2 {
 
 @keyframes moveUpDown {
     0%, 100% {
-      transform: translateY(0);
+      transform: translateY(-60px);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateY(-40px);
     }
   }
 
@@ -301,22 +301,6 @@ h2 {
 #slideLeft:hover, #slideRight:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-
-@keyframes fadeInOut {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-#title {
-    animation: fadeInOut 2s infinite;
 }
 
 @keyframes growShrink {
