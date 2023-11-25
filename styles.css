@@ -12,6 +12,44 @@
     color: white;
 }
 
+#slideLeft,
+#slideRight {
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px); /* Puedes ajustar la distancia del movimiento */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#slideLeft {
+    animation: moveRight 2s infinite linear;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Puedes ajustar la distancia del movimiento */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#slideRight {
+    animation: moveLeft 2s infinite linear;
+}
+
 body {
     background-color: black;
     overflow-x: hidden;
